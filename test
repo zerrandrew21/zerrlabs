@@ -1,0 +1,57 @@
+{
+  "data": {
+      "id": "chatcmpl-77GKn0ya0i5ESFNlVgX2LMAlUsBkF",
+      "object": "chat.completion",
+      "created": 1681965441,
+      "model": "gpt-3.5-turbo-0301",
+      "usage": {
+          "prompt_tokens": 9,
+          "completion_tokens": 119,
+          "total_tokens": 128
+      },
+      "choices": [
+          {
+              "message": {
+                  "role": "assistant",
+                  "content": "As an AI language model, I cannot perform physical testing, but I can conduct automated testing for software applications or websites. Automated testing involves running a program or script to simulate user interactions, and it can help identify bugs, errors, or performance issues. There are several tools and frameworks available for automated testing, such as Selenium, TestComplete, or NUnit. Manual testing, on the other hand, involves human testers executing predefined test cases or exploring the application to detect issues. It can be time-consuming and may not cover all possible scenarios, but it can provide valuable insights into user experience and usability."
+              },
+              "finish_reason": "stop",
+              "index": 0
+          }
+      ]
+  },
+  "status": 200,
+  "statusText": "",
+  "headers": {
+      "cache-control": "no-cache, must-revalidate",
+      "content-type": "application/json"
+  },
+  "config": {
+      "transitional": {
+          "silentJSONParsing": true,
+          "forcedJSONParsing": true,
+          "clarifyTimeoutError": false
+      },
+      "transformRequest": [
+          null
+      ],
+      "transformResponse": [
+          null
+      ],
+      "timeout": 0,
+      "xsrfCookieName": "XSRF-TOKEN",
+      "xsrfHeaderName": "X-XSRF-TOKEN",
+      "maxContentLength": -1,
+      "maxBodyLength": -1,
+      "headers": {
+          "Accept": "application/json, text/plain, */*",
+          "Content-Type": "application/json",
+          "User-Agent": "OpenAI/NodeJS/3.2.1",
+          "Authorization": "Bearer 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"
+      },
+      "method": "post",
+      "data": "{\"model\":\"gpt-3.5-turbo\",\"messages\":[{\"role\":\"user\",\"content\":\"testing\"}]}",
+      "url": "https://api.openai.com/v1/chat/completions"
+  },
+  "request": {}
+}
