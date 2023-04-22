@@ -1,6 +1,6 @@
 import { Grid } from "@mui/material";
 import ProjectCard from "../components/project-card";
-import astronaut from '../pages/projects/grid-game/astronaut.jpg'
+import astronaut from '../projects/grid-game/astronaut.jpg'
 
 const project1 =           
   <ProjectCard
@@ -17,7 +17,7 @@ const project2 =
     description="ChatGPT stuff"
     dateCreated="2023-04-18"
     imagePath="/path/to/image.jpg"
-    linkTo="/projects/chatly"
+    linkTo="/projects/chat-thing"
   />
 
   const ProjectsPage = () => {
