@@ -5,8 +5,8 @@ import ErrorPage from "./pages/error-page";
 import ProjectsPage from "./pages/projects-page";
 import BlogPage from "./pages/blog-page";
 import MainToolbar, { loader as rootLoader } from "./components/main-toolbar";
-import PuzzleGame from "./pages/projects/grid-game/grid-game";
-import ChatThing from "./pages/projects/chat-thing/chat-thing";
+import PuzzleGame from "./projects/grid-game/grid-game";
+import ChatThing from "./projects/chat-thing/chat-thing";
 
 const router = createBrowserRouter([
   {
@@ -28,7 +28,7 @@ const router = createBrowserRouter([
         element: <PuzzleGame />
       },
       {
-        path: 'projects/chatly',
+        path: 'projects/chat-thing',
         element: <ChatThing />
       },
       {
