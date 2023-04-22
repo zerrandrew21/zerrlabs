@@ -19,13 +19,13 @@ const StyledButton = styled(Button)(() => ({
     backgroundColor: 'inherit'
   },
   '&:click': {
-    backgroundColor: colors.mainBackground
+    backgroundColor: colors.darkBlue500
   }
 }))
 
 const ToolbarLink = styled(Link)(() => ({
   textDecoration: 'none',
-  color: colors.mainText,
+  color: colors.white500,
   transition: '0.75s ease',
   '&:hover': {
     filter: 'brightness(60%)',
@@ -57,7 +57,7 @@ const MainToolbar = () => {
   };
 
   return (
-    <Box sx={{height: '100vh', width: '100vw', backgroundColor: colors.mainBackground}}>
+    <Box sx={{height: '100vh', width: '100vw', backgroundColor: colors.darkBlue500}}>
       <AppBar position="sticky" sx={{backgroundColor: '#334554'}}>
         <Toolbar sx={{minHeight: '64px', maxHeight: '64px', paddingLeft: '24px'}}>
           <Box maxHeight={48} maxWidth={48}>{links.logo}</Box>
@@ -104,7 +104,7 @@ const MainToolbar = () => {
           )}
         </Toolbar>
       </AppBar>
-      <Box id="main-body" sx={{color: colors.mainText, margin: '24px 24px'}}>
+      <Box id="main-body" sx={{color: colors.white500, margin: '24px 24px'}}>
         <Outlet />
       </Box>
     </Box>
