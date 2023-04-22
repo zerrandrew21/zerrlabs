@@ -2,21 +2,6 @@ import { useState, useEffect } from "react";
 import { Box, Card, Grid, Typography } from "@mui/material";
 import astronaut from "./astronaut.jpg"
 
-// Fetch the image and convert it to a base64 string
-fetch(astronaut)
-  .then(response => response.blob())
-  .then(blob => new Promise((resolve, reject) => {
-    const reader = new FileReader();
-    reader.onloadend = () => resolve(reader.result);
-    reader.onerror = reject;
-    reader.readAsDataURL(blob);
-  }))
-  .then(base64String => {
-    // Do something with the base64 string
-    console.log(base64String);
-  })
-  .catch(error => console.error(error));
-
 interface CardData {
   id: number;
   img: string;
