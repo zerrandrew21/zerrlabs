@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Box, TextField, Typography } from '@mui/material'
-import { colors } from '../../../colors';
+import { colors } from '../../colors';
 import { Configuration, OpenAIApi } from "openai";
 
 const configuration = new Configuration({
@@ -70,7 +70,7 @@ export default function ChatThing() {
             <TextField
               value={inputText}
               onChange={(event) => setInputText(event.target.value)}
-              sx={{ backgroundColor: colors.mainText }}
+              sx={{ backgroundColor: colors.white500 }}
               label="Enter some text"
             />
           </form>
